@@ -1,0 +1,32 @@
+{
+    "title": "Elastifile Demo",
+    "description": "----",
+    "authenticated": true,
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "GCloud Init",
+                "text": "step1.md"
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "code": "set-env.sh",
+            "credits": ""
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+          "client": [{"file": "get-gcp", "target": "/opt/", "chmod": "+x"}]
+        }
+    },
+    "environment": {
+        "uilayout": "terminal",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nA good starting point is executing `docker`\u001b[m\r\n"
+    },
+    "backend": {
+      "dockerimage": "elastifile-gcp"
+    }
+}
