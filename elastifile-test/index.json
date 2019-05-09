@@ -6,8 +6,16 @@
     "details": {
         "steps": [
             {
-                "title": "GCloud Init",
+                "title": "Initializing the Cloud",
                 "text": "step1.md"
+            },
+            {
+                "title": "Mounting a local directory",
+                "text": "step2.md"
+            },
+            {
+                "title": "Performing CRUD functions",
+                "text": "step3.md"
             }
         ],
         "intro": {

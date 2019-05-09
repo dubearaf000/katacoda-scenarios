@@ -1,20 +1,13 @@
-`gcloud auth login`{{execute}}
+## Login to the Google Cloud
+In order to use the command line for Google Cloud Platform, we must first login using authorized credentials.   
+These authorized credentials have been already been automatically generated.
 
-Login using https://console.cloud.google.com
+To login, execute the following command `gcloud auth login`{{execute}} and copy the given link.    
+Now, open up a new tab in your browser, and paste the link. When prompted for a username and password, enter the credentials you were given at the beginning of this step.   
+Once you have successfully logged in, copy the verification code, and paste it into the Katacoda terminal.
 
+You have successfully connected the terminal to the Google Cloud Platform.
 
-`gcloud config set project $PROJECT_ID`{{execute}}
-
+## Viewing the Elastifile Cluster
+You can see the available Elastifle cluster by using the command
 `gcloud compute instances list`{{execute}}
-
-## Configure GCP Automation
-
-`git clone https://github.com/BenHall/gcp-automation; cd gcp-automation`{{execute}}
-
-`cp /opt/account.json .`{{execute}}
-
-```
-echo CREDENTIALS = \"account.json\" >> terraform.tfvars
-echo PROJECT = \"$PROJECT_ID\" >> terraform.tfvars
-echo SERVICE_EMAIL = \"$SERVICE_EMAIL\" >> terraform.tfvars
-```{{execute}}
