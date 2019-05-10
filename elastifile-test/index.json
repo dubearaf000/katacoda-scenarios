@@ -1,5 +1,5 @@
 {
-    "title": "Elastifile Demo",
+    "title": "Elastifile",
     "description": "----",
     "authenticated": true,
     "noindex": true,
@@ -10,12 +10,16 @@
                 "text": "step1.md"
             },
             {
-                "title": "Mounting a local directory",
+                "title": "Connecting through SSH",
                 "text": "step2.md"
             },
             {
-                "title": "Performing CRUD functions",
+                "title": "Mounting a local directory",
                 "text": "step3.md"
+            },
+            {
+                "title": "Performing CRUD functions",
+                "text": "step4.md"
             }
         ],
         "intro": {
@@ -24,7 +28,8 @@
             "credits": ""
         },
         "finish": {
-            "text": "finish.md"
+            "text": "finish.md",
+            "code": "end-env.sh"
         },
         "assets": {
           "client": [{"file": "get-gcp", "target": "/opt/", "chmod": "+x"}]
