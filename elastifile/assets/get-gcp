@@ -1,0 +1,36 @@
+clear
+echo 'Your Interactive Terminal'
+echo ''
+echo 'Waiting for Google Cloud Platform Credentials to be created'
+echo 'This is expected to take a few moments...'
+echo ''
+while [[ ! -f ~/.gcp-resp ]]
+do
+  sleep 1
+done
+sleep 5
+content=$(cat ~/.gcp-resp)
+username=$(echo $content | jq -r '.email')
+project=$(echo $content | jq -r '.resource')
+password=$(echo $content | jq -r '.password')
+region=$(echo $content | jq -r '.region')
+service_email="serviceAccount1@${project}.iam.gserviceaccount.com"
+
+echo 'Thank you! Your Google Cloud Platform Credentials have been created.'
+echo "export USERNAME=$username" > ~/.gcpenv
+echo "export PROJECT_ID=$project" >> ~/.gcpenv
+echo "export PASSWORD=$password" >> ~/.gcpenv
+echo "export REGION=\"$region\"" >> ~/.gcpenv
+echo "export username=$username" >> ~/.gcpenv
+echo "export project_id=$project" >> ~/.gcpenv
+echo "export password=$password" >> ~/.gcpenv
+echo "export region=\"$region\"" >> ~/.gcpenv
+echo "export SERVICE_EMAIL=\"$service_email\"" >> ~/.gcpenv
+echo "export service_email=\"$service_email\"" >> ~/.gcpenv
+echo "Username: $username"
+echo "Password: $password"
+echo "Project: $project"
+echo ''
+
+gcloud config set project $project &> /dev/null
+echo 'Login to console.cloud.google.com or using the gcloud CLI'

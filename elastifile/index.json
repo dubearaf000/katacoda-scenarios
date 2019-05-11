@@ -1,0 +1,44 @@
+{
+    "title": "Elastifile",
+    "description": "Learn how to use Elastifile, a Google Cloud elastific file storage provider.",
+    "authenticated": true,
+    "noindex": true,
+    "details": {
+        "steps": [
+            {
+                "title": "Initializing the Cloud",
+                "text": "step1.md"
+            },
+            {
+                "title": "Connecting through SSH",
+                "text": "step2.md"
+            },
+            {
+                "title": "Mounting a local directory",
+                "text": "step3.md"
+            },
+            {
+                "title": "Performing CRUD functions",
+                "text": "step4.md"
+            }
+        ],
+        "intro": {
+            "text": "intro.md",
+            "code": "set-env.sh",
+            "credits": ""
+        },
+        "finish": {
+            "text": "finish.md"
+        },
+        "assets": {
+          "client": [{"file": "get-gcp", "target": "/opt/", "chmod": "+x"}]
+        }
+    },
+    "environment": {
+        "uilayout": "terminal",
+        "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nA good starting point is executing `docker`\u001b[m\r\n"
+    },
+    "backend": {
+      "dockerimage": "elastifile-gcp"
+    }
+}
