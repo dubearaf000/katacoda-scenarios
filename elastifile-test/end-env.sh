@@ -1,1 +1,3 @@
-cd ~; umount /mnt/elastifile; rmdir /mnt/elastifile
+cd ~
+umount /mnt/elastifile
+rmdir /mnt/elastifile
