@@ -20,11 +20,15 @@
             {
                 "title": "Performing CRUD functions",
                 "text": "step4.md"
+            },
+            {
+                "title": "Cleaning up Elastifile",
+                "text": "step5.md"
             }
         ],
         "intro": {
             "text": "intro.md",
-            "code": "set-env.sh",
+            "code": "gcp-login.sh",
             "credits": ""
         },
         "finish": {
