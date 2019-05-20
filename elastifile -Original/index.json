@@ -1,6 +1,6 @@
 {
-    "title": "Elastifile",
-    "description": "----",
+    "title": "Elastifile - Original",
+    "description": "Learn how to use Elastifile, a Google Cloud elastific file storage provider.",
     "authenticated": true,
     "noindex": true,
     "details": {
@@ -20,6 +20,10 @@
             {
                 "title": "Performing CRUD functions",
                 "text": "step4.md"
+            },
+            {
+                "title": "Cleaning up Elastifile",
+                "text": "step5.md"
             }
         ],
         "intro": {
@@ -28,8 +32,7 @@
             "credits": ""
         },
         "finish": {
-            "text": "finish.md",
-            "code": "end-env.sh"
+            "text": "finish.md"
         },
         "assets": {
           "client": [{"file": "get-gcp", "target": "/opt/", "chmod": "+x"}]
