@@ -28,7 +28,7 @@
         ],
         "intro": {
             "text": "intro.md",
-            "code": "get-gcp",
+            "code": "set-env.sh",
             "credits": ""
         },
         "finish": {
