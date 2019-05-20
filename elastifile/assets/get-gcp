@@ -1,4 +1,4 @@
-clear
+
 echo 'Your Interactive Terminal'
 echo ''
 echo 'Waiting for Google Cloud Platform Credentials to be created'
