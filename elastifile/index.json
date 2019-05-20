@@ -28,7 +28,7 @@
         ],
         "intro": {
             "text": "intro.md",
-            "code": "test.sh",
+            "code": "set-env.sh",
             "credits": ""
         },
         "finish": {
