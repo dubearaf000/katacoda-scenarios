@@ -35,6 +35,8 @@ echo ''
 gcloud config set project $project &> /dev/null
 echo 'Login to console.cloud.google.com or using the gcloud CLI'
 
+clear
+
 gcloud auth activate-service-account --key-file=/opt/account.json
 
-echo 'User is logged in'
+clear
